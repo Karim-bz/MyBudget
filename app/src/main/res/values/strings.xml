@@ -2,11 +2,12 @@
     <string name="app_name">My Budget</string>
     <string name="add_budget_Title">Add new budget</string>
     <string name="choose_category">choose category</string>
+    <string name="category_spinner">category_spinner</string>
     <string name="budget_name">Name</string>
-    <string name="budget_types">Product, Service, Budget used, &#8230;</string>
+    <string name="name_txt_hint">Product, Service, Budget used, &#8230;</string>
     <string name="budget_cost">Cost</string>
-    <string name="budget_cost_hint">How much ?</string>
-    <string name="buy_From">From who ?</string>
-    <string name="buy_From_hint">Company, Market, &#8230;</string>
+    <string name="cost_txt_hint">How much ?</string>
+    <string name="from_who">From who ?</string>
+    <string name="from_who_hint">Company, Market, &#8230;</string>
     <string name="add_budget_btn">Add Budget</string>
 </resources>

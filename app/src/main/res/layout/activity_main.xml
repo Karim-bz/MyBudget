@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,59 +20,73 @@
             android:text="@string/add_budget_Title"
             android:textColor="#000000"
             android:textSize="24sp"
-            android:layout_marginBottom="30dp"></TextView>
+            android:layout_marginBottom="30dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/choose_category"></TextView>
+            android:text="@string/choose_category" />
+
         <Spinner
-            android:id="@+id/spinner1"
+            android:id="@+id/category_spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown"/>
+            android:contentDescription="@string/category_spinner"
+            android:spinnerMode="dropdown" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/budget_name"
-            android:layout_marginTop="15dp"></TextView>
+            android:layout_marginTop="15dp" />
+
         <EditText
-            android:id="@+id/etxtName"
+            android:id="@+id/name_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/budget_types"
-            android:inputType="textPersonName" />
+            android:autofillHints=""
+            android:hint="@string/name_txt_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/budget_cost"
-            android:layout_marginTop="15dp"></TextView>
+            android:layout_marginTop="15dp" />
+
         <EditText
-            android:id="@+id/etxtCost"
+            android:id="@+id/cost_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/budget_cost_hint"
-            android:inputType="textPersonName" />
+            android:hint="@string/cost_txt_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:autofillHints="" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buy_From"
-            android:layout_marginTop="15dp"></TextView>
+            android:layout_marginTop="15dp"
+            android:text="@string/from_who" />
+
         <EditText
-            android:id="@+id/etxtCompany"
+            android:id="@+id/company_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/buy_From_hint"
-            android:inputType="textPersonName" />
+            android:autofillHints=""
+            android:hint="@string/from_who_hint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/add_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onSubmit"
             android:text="@string/add_budget_btn" />
 
     </LinearLayout>
